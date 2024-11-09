@@ -28,7 +28,7 @@ body {
 }
 
 #cursor {
-  pointer-events: none; /* �꾨?���� �볦?�� �붿?�� ??�ㅼ�?? ��??깽��?? 留됱�?? �딅룄濡�?? */
+  pointer-events: none; /* 마우스 이벤트를 무시 */
   position: fixed;
   top: -10%;
   left: -10%;
@@ -38,17 +38,17 @@ body {
   height: 30px;
   border-radius: 50%;
   transition: width 0.5s, height 0.5s;
-  background: #111;
-  mix-blend-mode: soft-light;
-  /* opacity: 0; */
+  background: #000; /* 검정색으로 변경 */
+  /* mix-blend-mode: soft-light; */ /* 이 줄을 주석 처리하거나 삭제 */
 }
 
 #cursor.active {
   width: 60px;
   height: 60px;
-  background: #577c93;
-  mix-blend-mode: screen;
+  background: #577c93; /* 활성화 시 색상 */
+  /* mix-blend-mode: screen; */ /* 이 줄도 주석 처리하거나 삭제 */
 }
+
 #cursor.ani_on {
   animation: fadeIn 1.5s 3.5s both;
 }
@@ -69,8 +69,8 @@ body {
   );
 }
 .section_bg.bg2 {
-  background-image: url(../images/cloud_panorama1.png),
-    url(../images/cloud_panorama2.png);
+  background-image: url(../images/walk1.png),
+    url(../images/walk2.png);
 }
 .layer_btm_gradient {
   opacity: 0;
@@ -123,7 +123,7 @@ header.ani_on {
   animation: slideDown 1s 2.4s both, fadeIn 1s 2.4s both;
 }
 header a {
-  color: #ffffff;
+  color: #000000;
   text-shadow: 0px 2px 5px rgba(87, 124, 147, 0.3);
   font-family: 'Montserrat';
   white-space: nowrap;
@@ -153,7 +153,7 @@ header h1 a:hover {
 header ul {
   height: 100%;
   display: flex;
-  align-items: stretch; /* li ��?�씠 100 李⑥��?���?? stretch */
+  align-items: stretch; /* li ��?�씠 100 李⑥��?���?? stretch */
 }
 header ul li {
   position: relative;
@@ -237,7 +237,7 @@ intro
   -webkit-transform: translate3d(0, 0, 0);
 } */
 #intro .layer1 {
-  background-image: url(../img/cloud_panorama1.png);
+  background-image: url(../img/walk1.png);
 }
 #intro .layer1.ani_on {
   animation: bgMove 150s linear infinite alternate;
@@ -275,7 +275,7 @@ intro
 #intro .title .title_container h1 {
   text-align: center;
   font-weight: 300;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 0 2px 10px #22405a33;
   transition: 0.5s;
 }
@@ -303,7 +303,7 @@ intro
 }
 #intro .title .title_container h1 span strong {
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 0 2px 10px #22405a55;
 }
 #intro .title .title_container h1 .line {
@@ -974,10 +974,10 @@ clone
 }
 #clone .contents h2,
 #clone .contents p {
-  color: #fff;
+  color: #000000;
 }
 #clone .contents a {
-  color: #fff;
+  color: #000000;
 }
 #clone .contents .grid-container .grid-item {
   position: relative;
@@ -1012,7 +1012,7 @@ clone
   transform: translateY(0);
 }
 #clone .contents .grid-container .grid-item .info .txt {
-  color: #fff;
+  color: #000000;
 }
 #clone .contents .grid-container .grid-item .info .txt h2 {
   font-size: 1.125rem;
